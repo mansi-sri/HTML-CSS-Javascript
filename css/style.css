@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navbar-height:59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    font-family:'DynaPuff', cursive;
+
+}
+
+#logo{
+    margin:-12px -14px;
+
+}
+
+#logo img{
+    margin:34px 45px;
+    max-width: 15px;
+
+}
+
+#navbar ul{
+    display: flex;
+    /*color: white;*/
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul a{
+    display: block;
+    color: white;
+    list-style: none;
+    padding: 3px 22px;
+    /*font-size: 1.3rem;*/
+    text-decoration: none;
+    border-radius: 12px;
+}
+#navbar ul a:hover{
+    background-color: black;
+    color: antiquewhite;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 340px;
+}
+#home::before{
+    content: "";
+    background:url('../image/Pizza.jpg') no-repeat center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.80;
+}
+
+.heading-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.heading-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:'DynaPuff', cursive;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family:'DynaPuff', cursive;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(108, 34, 34);
+    color: white;
+    margin: 17px;
+    border-radius: 12px;
+    font-family:'DynaPuff', cursive;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#service{
+   
+    margin: 34px;
+    display: flex;
+}
+#service .box {
+    
+    border: 2px solid pink;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 3px 6px;
+    background-color: rgb(223, 197, 148)
+}
+
+#service .box img{
+    display: block;
+    margin: auto;
+   
+ 
+    height: 160px;
+}
+
+.h-primary-centre{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.h-secondary-centre{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.clients-class{
+    text-align: center;
+}
+
+
+#client-section{
+    height: 344px;
+    position: relative;
+
+}
+#client-section::before{
+    height: 344px;
+    background: url('../image/pasta.jpg');
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#clients img{
+   height: 144px;
+
+}
+
+.client-item{
+    padding: 40px;;
+}
+
+.center{
+    text-align: center;
+}
+
+#contact{
+
+    position: relative;
+
+}
+
+#contact::before{
+    content: "";
+    background:url('../image/pancakes.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.60;
+
+    
+}
+
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+
+#contact-box input, #contact-box input{
+ width: 100%;
+ padding: 0.5rem;
+ border-radius: 12px;
+ 
+}
+
+#contact-box form{
+    width: 40%;
+    border-radius: 12px;
+}
+
+
+#contact-box label{
+    font-size: 1.3rem;
+    border-radius: 12px;
+    
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.0rem;
+    border-radius: 12px;
+    
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 4px 20px;
+}
